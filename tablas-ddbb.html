@@ -1,0 +1,207 @@
+vinculado con mockoon
+
+
+POST /autores:
+[
+  {
+    "id": 1,
+    "nombre": "Gabriel García Márquez",
+    "nacionalidad": "Colombiano"
+  },
+  {
+    "id": 2,
+    "nombre": "Miguel de Cervantes",
+    "nacionalidad": "Español"
+  },
+  {
+    "id": 3,
+    "nombre": "George Orwell",
+    "nacionalidad": "Británico"
+  },
+  {
+    "id": 4,
+    "nombre": "Jane Austen",
+    "nacionalidad": "Británica"
+  },
+  {
+    "id": 5,
+    "nombre": "Harper Lee",
+    "nacionalidad": "Estadounidense"
+  },
+  {
+    "id": 6,
+    "nombre": "F. Scott Fitzgerald",
+    "nacionalidad": "Estadounidense"
+  },
+  {
+    "id": 7,
+    "nombre": "Agatha Christie",
+    "nacionalidad": "Británica"
+  },
+  {
+    "id": 8,
+    "nombre": "Ernest Hemingway",
+    "nacionalidad": "Estadounidense"
+  },
+  {
+    "id": 9,
+    "nombre": "Stephen King",
+    "nacionalidad": "Estadounidense"
+  },
+  {
+    "id": 10,
+    "nombre": "J.R.R. Tolkien",
+    "nacionalidad": "Británico"
+  }
+]
+
+  POST /libros:
+  [{
+    "id": 1,
+    "titulo": "Cien Años de Soledad",
+    "autorId": 1,
+    "categoria": "Ficción"
+  }
+  {
+    "id": 2,
+    "titulo": "La Casa de los Espíritus",
+    "autorId": 2,
+    "categoria": "Ficción"
+  }
+  {
+    "id": 3,
+    "titulo": "Harry Potter y la Piedra Filosofal",
+    "autorId": 3,
+    "categoria": "Fantasía"
+  }
+  {
+    "id": 4,
+    "titulo": "El Resplandor",
+    "autorId": 4,
+    "categoria": "Terror"
+  }
+  {
+    "id": 5,
+    "titulo": "El Señor de los Anillos",
+    "autorId": 5,
+    "categoria": "Fantasía"
+  }
+  {
+    "id": 6,
+    "titulo": "1984",
+    "autorId": 6,
+    "categoria": "Ciencia Ficción"
+  }
+  {
+    "id": 7,
+    "titulo": "Asesinato en el Orient Express",
+    "autorId": 7,
+    "categoria": "Misterio"
+  }
+  {
+    "id": 8,
+    "titulo": "El Viejo y el Mar",
+    "autorId": 8,
+    "categoria": "Ficción"
+  }]
+
+  POST /prestamos:
+  [{
+    "id": 1,
+    "libro_id": 1,
+    "usuario_id": 1,
+    "fecha_prestamo": "2024-01-01",
+    "fecha_devolucion": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "libro_id": 2,
+    "usuario_id": 2,
+    "fecha_prestamo": "2024-01-05",
+    "fecha_devolucion": "2024-01-20"
+  },
+  {
+    "id": 3,
+    "libro_id": 3,
+    "usuario_id": 3,
+    "fecha_prestamo": "2024-01-10",
+    "fecha_devolucion": "2024-01-25"
+  },
+  {
+    "id": 4,
+    "libro_id": 4,
+    "usuario_id": 4,
+    "fecha_prestamo": "2024-01-15",
+    "fecha_devolucion": "2024-01-30"
+  },
+  {
+    "id": 5,
+    "libro_id": 5,
+    "usuario_id": 5,
+    "fecha_prestamo": "2024-01-20",
+    "fecha_devolucion": "2024-02-04"
+  },
+  {
+    "id": 6,
+    "libro_id": 6,
+    "usuario_id": 6,
+    "fecha_prestamo": "2024-01-25",
+    "fecha_devolucion": "2024-02-09"
+  },
+  {
+    "id": 7,
+    "libro_id": 7,
+    "usuario_id": 7,
+    "fecha_prestamo": "2024-01-30",
+    "fecha_devolucion": "2024-02-14"
+  },
+  {
+    "id": 8,
+    "libro_id": 8,
+    "usuario_id": 8,
+    "fecha_prestamo": "2024-02-01",
+    "fecha_devolucion": "2024-02-16"
+  }]
+
+  POST /usuarios:
+  [{
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@example.com"
+  }
+  {
+    "id": 2,
+    "nombre": "María López",
+    "email": "maria.lopez@example.com"
+  }
+  {
+    "id": 3,
+    "nombre": "Carlos García",
+    "email": "carlos.garcia@example.com"
+  }
+  {
+    "id": 4,
+    "nombre": "Ana Torres",
+    "email": "ana.torres@example.com"
+  }
+  {
+    "id": 5,
+    "nombre": "Luis Fernández",
+    "email": "luis.fernandez@example.com"
+  }
+  {
+    "id": 6,
+    "nombre": "Laura Martínez",
+    "email": "laura.martinez@example.com"
+  }
+  {
+    "id": 7,
+    "nombre": "Pedro Rodríguez",
+    "email": "pedro.rodriguez@example.com"
+  }
+  {
+    "id": 8,
+    "nombre": "Sofía Ramírez",
+    "email": "sofia.ramirez@example.com"
+  }]
+   
