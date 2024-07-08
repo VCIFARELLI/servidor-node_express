@@ -1,8 +1,8 @@
 class Libro {
-    constructor(id_libro, titulo, autorID, categoria) {
+    constructor(id_libro, titulo, id_autor, categoria) {
         this.id_libro = id_libro;
         this.titulo = titulo;
-        this.autorID = autorID;
+        this.id_autor= id_autor;
         this.categoria = categoria;
     }
 }

@@ -23,7 +23,7 @@ export const getById = async (req, res) => {
 
 export const create = async (req, res) => {
     try {
-        const nuevoLibro = new Libro(req.body.id_libro, req.body.titulo, req.body.autorID, req.body.categoria);
+        const nuevoLibro = new Libro(req.body.id_libro, req.body.titulo, req.body.id_autor, req.body.categoria);
         const response = await axios.post(baseURL, nuevoLibro);
         res.status(201).json(response.data);
     } catch (error) {
@@ -33,7 +33,7 @@ export const create = async (req, res) => {
 
 export const update = async (req, res) => {
     try {
-        const libroActualizado = new Libro(req.params.id_libro, req.body.titulo, req.body.autorID, req.body.categoria);
+        const libroActualizado = new Libro(req.params.id_libro, req.body.titulo, req.body.id_autor, req.body.categoria);
         const response = await axios.put(`${baseURL}/${req.params.id_libro}`, libroActualizado);
         res.json(response.data);
     } catch (error) {
