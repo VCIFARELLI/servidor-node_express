@@ -4,10 +4,10 @@ import { getAll, getById, create, update, deletePrestamo } from '../controllers/
 const router = express.Router();
 
 router.get('/', getAll);
-router.get('/:id', getById);
+router.get('/:id_prestamo', getById);
 router.post('/', create);
-router.put('/:id', update);
-router.delete('/:id', deletePrestamo);
+router.put('/:id_prestamo', update);
+router.delete('/:id_prestamo', deletePrestamo);
 
 export default router;
 

@@ -23,7 +23,7 @@ export const getById = async (req, res) => {
 
 export const create = async (req, res) => {
     try {
-        const nuevoPrestamo = new Prestamo(req.body.id_prestamo, req.body.libro_Id, req.body.usuario_Id, req.body.fecha_prestamo, req.body.fecha_devolucion);
+        const nuevoPrestamo = new Prestamo(req.body.id_prestamo, req.body.id_libro, req.body.id_usuario, req.body.fecha_prestamo, req.body.fecha_devolucion);
         const response = await axios.post(baseURL, nuevoPrestamo);
         res.status(201).json(response.data);
     } catch (error) {
@@ -33,7 +33,7 @@ export const create = async (req, res) => {
 
 export const update = async (req, res) => {
     try {
-        const prestamoActualizado = new Prestamo(req.params.id_prestamo, req.body.libro_id, req.body.usuario_id, req.body.fecha_prestamo, req.body.fecha_devolucion);
+        const prestamoActualizado = new Prestamo(req.params.id_prestamo, req.body.id_libro, req.body.id_usuario, req.body.fecha_prestamo, req.body.fecha_devolucion);
         const response = await axios.put(`${baseURL}/${req.params.id_prestamo}`, prestamoActualizado);
         res.status(200).json(response.data);
     } catch (error) {

@@ -4,10 +4,10 @@ import { getAll, getById, create, update, deleteLibro } from '../controllers/lib
 const router = express.Router();
 
 router.get('/', getAll);
-router.get('/:id', getById);
+router.get('/:id_libro', getById);
 router.post('/', create);
-router.put('/:id', update);
-router.delete('/:id', deleteLibro);
+router.put('/:id_libro', update);
+router.delete('/:id_libro', deleteLibro);
 
 export default router;
 

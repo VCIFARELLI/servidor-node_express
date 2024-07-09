@@ -4,10 +4,10 @@ import { getAll, getById, create, update, deleteAutor } from '../controllers/aut
 const router = express.Router();
 
 router.get('/', getAll);
-router.get('/:id', getById);
+router.get('/:id_autor', getById);
 router.post('/', create);
-router.put('/:id', update);
-router.delete('/:id', deleteAutor);
+router.put('/:id_autor', update);
+router.delete('/:id_autor', deleteAutor);
 
 export default router;
 

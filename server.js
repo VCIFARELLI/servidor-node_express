@@ -39,6 +39,14 @@ const fetchDataFromMockaroo = async () => {
 
 fetchDataFromMockaroo();
 
+app.use((req, res, next) => {
+  req.libros = libros;
+  req.autores = autores;
+  req.prestamos = prestamos;
+  req.usuarios = usuarios;
+  next();
+});
+
 app.use('/libros', librosRoutes);
 app.use('/autores', autoresRoutes);
 app.use('/usuarios', usuariosRoutes);
