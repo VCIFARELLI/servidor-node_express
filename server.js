@@ -32,8 +32,13 @@ const fetchDataFromMockaroo = async () => {
     autores = autoresResponse.data;
     prestamos = prestamosResponse.data;
     usuarios = usuariosResponse.data;
+    console.log('Datos obtenidos con éxito de Mockaroo');
   } catch (error) {
-    console.error('Error fetching data from Mockaroo:', error);
+    if (error.response && error.response.data && error.response.data.error) {
+      console.error('Error fetching data from Mockaroo:', error.response.data.error);
+    } else {
+      console.error('An unknown error occurred:', error.message);
+    }
   }
 };
 
