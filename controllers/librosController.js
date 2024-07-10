@@ -25,6 +25,8 @@ export const create = async (req, res) => {
     try {
         const nuevoLibro = new Libro(req.body.id_libro, req.body.titulo, req.body.id_autor, req.body.categoria);
         const response = await axios.post(baseURL, nuevoLibro);
+        const librosResponse = await axios.get(baseURL);
+        req.libros = librosResponse.data;
         res.status(201).json(response.data);
     } catch (error) {
         res.status(500).send('Error al crear el libro');
